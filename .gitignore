@@ -1,0 +1,10 @@
+.venv
+
+.env
+
+.myenv
+
+.idea
+.vscode
+
+**/*.pyc
