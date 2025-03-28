@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Strona główna {% endblock %}
+{% load static %}
+
+{% block content %}
+<div>
+    <h4>O nas</h4>
+    <p>
+        Jesteśmy firmą budowlaną z wieloletnim doświadczeniem,<br>
+        specjalizującą się w kompleksowych remontach, wykończeniach wnętrz oraz budowie domów od podstaw.<br>
+        Stawiamy na solidność, terminowość i jakość wykonania.<br>
+    </p>
+</div>
+<div>
+    <img src="{% static 'images/zdjecie_zespolu.jpg' %}" alt="Zdjęcie naszego zespołu">
+</div>
+<div>
+    <p>Lata doświadczenia: 15</p>
+    <p>Ilość projektów: 120</p>
+    <p>Główne specjalizacje:</p>
+</div>
+<div>
+    <ul>
+        {% for service in services %}
+            <li><h3>{{ service.name }}</h3><br>{{ service.description }}</li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

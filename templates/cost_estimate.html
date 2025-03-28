@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %} Kalkulator wycen {% endblock %}
+{% load static %}
+
+{% block content %}
+    <header>
+        <h2> Kalkulator wycen dla naszych usług </h2>
+    </header>
+    <main>
+        <form method="POST">
+            <label>USŁUGA</label>
+            <input type="text">
+            <label>METRAŻ</label>
+            <input type="text">
+        </form>
+        <div>
+            <p> WYLICZENIE </p>
+        </div>
+    </main>
+{% endblock %}

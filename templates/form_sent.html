@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %} Strona główna {% endblock %}
+{% load static %}
+
+{% block content %}
+    <div>
+        <p> Wiadomość została wysłana! Dziękujemy za kontakt. </p>
+        <a href="{% url 'home' %}"><button> Powrót na stronę główną </button></a>
+    </div>
+{% endblock %}
