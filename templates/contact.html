@@ -3,14 +3,13 @@
 {% load static %}
 
 {% block content %}
-    <form method="post">
+    <form method="post" novalidate>
         {% for field in form %}
-            {{ field.label }}<br>
-            {{ field }}
-            {% if field.error %}
-                {{ field.error }}
+            <label>{{ field.label }}</label>
+            <p>{{ field }}</p>
+            {% if field.errors and request.method == 'POST' %}
+                <div>{{ field.errors.0 }}</div>
             {% endif %}
-            <br>
         {% endfor %}
         {% csrf_token %}
         <button type="submit"> Wyślij </button>

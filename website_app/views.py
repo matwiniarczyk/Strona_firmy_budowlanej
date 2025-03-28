@@ -27,8 +27,8 @@ def contact_view(request):
 
             return redirect('form_sent')
 
-        field_error = form.errors
-    return render(request, 'contact.html', {'form': form, 'field_error': field_error})
+
+    return render(request, 'contact.html', {'form': form})
 
 
 def form_sent_view(request):
