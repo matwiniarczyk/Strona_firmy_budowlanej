@@ -27,7 +27,7 @@ urlpatterns = [
     path('cost_estimate/', views.cost_estimate_view, name='cost_estimate'),
     path('contact/', views.contact_view, name='contact'),
     path('form_sent/', views.form_sent_view, name='form_sent'),
-    path('FAQ/', views.home_view, name='FAQ'),
+    path('FAQ/', views.faq_view, name='FAQ'),
     path('projects_galery/', views.projects_galery_view, name='projects_galery'),
 ]
 

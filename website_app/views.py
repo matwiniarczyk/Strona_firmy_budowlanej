@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 
 from website_app.forms import ContactForm
-from website_app.models import ServiceOffers, MessagesFromForm, ProjectsDone
+from website_app.models import ServiceOffers, MessagesFromForm, ProjectsDone, FrequentlyAsked
 
 
 def home_view(request):
@@ -27,7 +27,6 @@ def contact_view(request):
 
             return redirect('form_sent')
 
-
     return render(request, 'contact.html', {'form': form})
 
 
@@ -38,3 +37,8 @@ def form_sent_view(request):
 def projects_galery_view(request):
     projects = ProjectsDone.objects.all()
     return render(request, 'projects_galery.html', {'projects': projects})
+
+
+def faq_view(request):
+    frequently_asked = FrequentlyAsked.objects.all()
+    return render(request, 'FAQ.html', {'frequently_asked': frequently_asked})

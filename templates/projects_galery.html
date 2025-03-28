@@ -8,6 +8,13 @@
         {% for project in projects %}
             <h4>{{ project.name }}</h4>
             <p>{{ project.description }}</p><br>
+            {% if project.image %}
+                <div>
+                    {{ project.image }}
+                </div>
+            {% else %}
+            <p>ZDJĘCIE</p>
+            {% endif %}
         {% endfor %}
     </div>
 {% endblock %}

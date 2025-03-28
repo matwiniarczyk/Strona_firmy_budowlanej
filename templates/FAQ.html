@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %} Kontakt {% endblock %}
+{% load static %}
+
+{% block content %}
+<div>
+    {% for faq in frequently_asked %}
+        <div>
+            <h2>{{ faq.question }}</h2>
+            <p>{{ faq.answer }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
