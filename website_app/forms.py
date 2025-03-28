@@ -3,7 +3,7 @@ import re
 
 
 class ContactForm(forms.Form):
-    name = forms.CharField(max_length=30, required=True, error_messages={
+    name = forms.CharField(max_length=30, required=True,  label='Imię:', error_messages={
         'required': "Imię nie może być puste!",
     })
     subject = forms.CharField(max_length=60, required=True, error_messages={

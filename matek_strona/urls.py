@@ -14,7 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
+from website_app import views
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
@@ -23,7 +23,12 @@ from matek_strona import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('',, name='home'),
+    path('', views.home_view, name='home'),
+    path('cost_estimate/', views.cost_estimate_view, name='cost_estimate'),
+    path('contact/', views.contact_view, name='contact'),
+    path('form_sent/', views.form_sent_view, name='form_sent'),
+    path('FAQ/', views.home_view, name='FAQ'),
+    path('projects_galery/', views.projects_galery_view, name='projects_galery'),
 ]
 
 if settings.DEBUG:
