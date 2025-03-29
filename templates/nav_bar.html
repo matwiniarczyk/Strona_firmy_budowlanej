@@ -1,8 +1,16 @@
-<div>
-    <a href="{% url 'home' %}"> O NAS</a>
-    <a href="{% url 'cost_estimate' %}"> WYCENA</a>
-    <a href="{% url 'contact' %}"> KONTAKT</a>
-    <a href="{% url 'FAQ' %}"> FAQ</a>
-    <a href="{% url 'projects_galery' %}"> GALERIA</a>
-    <p> LOGO </p> <br>
-</div>
+{% load static %}
+<nav>
+  <div class="nav-container">
+    <ul class="nav-bar">
+      <li><a href="{% url 'home' %}">O NAS</a></li>
+      <li><a href="{% url 'cost_estimate' %}">WYCENA</a></li>
+      <li><a href="{% url 'contact' %}">KONTAKT</a></li>
+      <li><a href="{% url 'FAQ' %}">FAQ</a></li>
+      <li><a href="{% url 'projects_galery' %}">GALERIA</a></li>
+    </ul>
+
+    <div class="logo">
+      <img src="{% static 'images/logo.png' %}" alt="LOGO">
+    </div>
+  </div>
+</nav>

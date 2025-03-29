@@ -1,0 +1,108 @@
+/* ------------------------------------ NAVBAR -------------------------------------- */
+nav {
+    margin-top: 30px;
+    background-color: #2C2C2C;
+    padding: 0 1em;
+    overflow: visible;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 3em;
+    list-style: none;
+}
+
+.nav-bar li {
+    display: block;
+}
+
+.nav-bar a {
+    display: inline-block;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    color: #FAFAFA;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.2s ease, text-shadow 0.2s ease, color 0.2s ease;
+}
+
+.nav-bar a:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    color: #fff7ca;
+}
+
+.logo img {
+    height: 140px;
+    width: auto;
+    display: block;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* ------------------------------------ BODY -------------------------------------- */
+html, body {
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------ MAIN -------------------------------------- */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* ------------------------------------ STOPKA -------------------------------------- */
+footer {
+    font-size: 12px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C2C2C;
+    color: #FAFAFA;
+    font-family: "Roboto", sans-serif;
+    padding: 1em 3em;
+}
+
+.developer-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social_icons a {
+    text-decoration: none;
+    font-size: 15px;
+    color: #FAFAFA;
+    transition: transform 0.2s ease, text-shadow 0.2s ease, color 0.2s ease;
+}
+
+.social_icons a:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    color: #fff7ca;
+}
+
