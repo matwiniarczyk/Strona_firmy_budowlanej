@@ -18,4 +18,4 @@ Tworzę ten projekt w ramach nauki, chcąc rozwijać umiejętności budowania pr
 ## ⚙️ Status
 Projekt w fazie rozwoju — aktualnie pracuję nad dostosowaniem wyglądu strony.
 
-*Wygląd moich aplikacji CSS odbiega od tych profesjonalnych, jednak proces frontendowy nie jest dla mnie tak istotny w nauce.
+*Design i layout moich aplikacji odbiega od tych profesjonalnych, jednak proces frontendowy nie jest dla mnie tak istotny w nauce.
