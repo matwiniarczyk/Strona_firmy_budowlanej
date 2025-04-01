@@ -1,6 +1,6 @@
 # 🧱 Strona internetowa dla firmy budowlanej
 
-Responsywna strona internetowa stworzona w ramach nauki Django i tworzenia projektów webowych dla realnych zastosowań. Projekt ma na celu odwzorowanie profesjonalnej witryny firmowej dla branży budowlanej.
+Responsywna strona internetowa stworzona w ramach nauki Django i tworzenia projektów webowych dla realnych zastosowań. Projekt ma na celu odwzorowanie profesjonalnej witryny firmowej dla branży budowlanej.\
 
 ## 🛠️ Technologie
 - Python3
@@ -17,3 +17,5 @@ Tworzę ten projekt w ramach nauki, chcąc rozwijać umiejętności budowania pr
 
 ## ⚙️ Status
 Projekt w fazie rozwoju — aktualnie pracuję nad dostosowaniem wyglądu strony.
+
+*Wygląd moich aplikacji CSS odbiega od tych profesjonalnych, jednak proces frontendowy nie jest dla mnie tak istotny w nauce.
